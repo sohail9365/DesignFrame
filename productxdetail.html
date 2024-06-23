@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Frame</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f2ee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .product-card {
+            background-color: white;
+            display: flex;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 700px;
+        }
+
+        .image-section img {
+            width: 145px;
+            height: 250px;
+            display: block;
+        }
+
+        .info-section {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .info-section h2 {
+            color: #8a8a8a;
+            font-size: 14px;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .info-section h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .info-section .description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .price .current-price {
+            color: #27a544;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .price .original-price {
+            color: #999;
+            font-size: 16px;
+            text-decoration: line-through;
+        }
+
+        .add-to-cart {
+            background-color: #2b755b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .add-to-cart:hover {
+            background-color: #245f4b;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <div class="image-section">
+            <img src="/images/frame5.jpg" >
+        </div>
+        <div class="info-section">
+            <h2>FRAME</h2>
+            <h1>Design Frame</h1>
+            <p class="description">Customise your design frame according to you, contact our team for more detail</p>
+            <div class="price">
+                <span class="current-price">₹199.99</span>
+                <span class="original-price">₹499.99</span>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
